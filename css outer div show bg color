@@ -1,0 +1,19 @@
+// HTML
+<div id="outer">
+    <div id="inner">a</div>
+    <div id="inner">b</div>
+    <div id="inner">c</div>
+</div>
+
+
+//CSS
+#outer {
+  background-color:orange;
+}
+
+#inner {
+   background-color: inherit;
+   float: left;
+   width: 100px;
+   height: 100px;
+}
