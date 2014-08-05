@@ -1,0 +1,53 @@
+// HTML
+<!-- The canvas element is the actual DOM node that's embedded in the HTML page -->
+<canvas id="myCanvas" width="300" height="200" style="border:1px solid #c3c3c3;">Your browser does not support the HTML5 canvas tag.</canvas>
+
+
+// JS
+var c = document.getElementById("myCanvas");
+/*The canvas context is an object with properties and methods that you can use to render graphics inside the canvas element. The context can be 2d or webgl (3d).*/
+var context = c.getContext("2d");
+context.fillStyle = "#CF0";
+context.fillRect(0, 0, 205, 105);
+
+//line
+//Lines can have one of three cap styles: butt, round, or square
+context.beginPath();
+context.moveTo(10, 10);
+context.lineTo(200, 100);
+context.lineWidth = 2;
+context.lineCap = 'round';
+context.stroke();
+
+//arc
+var x = 40;
+var y = 40;
+var radius = 25;
+var startAngle = 1.5 * Math.PI;
+var endAngle = 3 * Math.PI;
+var counterClockwise = false;
+context.beginPath();
+context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+context.lineWidth = 2;
+context.strokeStyle = 'black';
+context.stroke();
+
+//rectangle
+context.beginPath();
+context.rect(20, 120, 50, 60);
+context.fillStyle = 'red';
+context.fill();
+context.lineWidth = 3;
+context.strokeStyle = 'black';
+context.stroke();
+
+//text
+context.font = "30px Arial";
+context.fillStyle = 'black';
+context.fillText("Simple Text", 100, 150);
+
+//text with stroke
+context.font = "30px Arial";
+context.strokeStyle = '#666';
+context.lineWidth = 1;
+context.strokeText("Stroke Text", 30, 80);
