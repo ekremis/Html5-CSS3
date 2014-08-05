@@ -1,0 +1,16 @@
+// HTML
+<div>SomeText</div>
+<div class="class1">SomeText</div>
+
+// CSS
+div {
+height:60px;
+background-color:green;
+}
+
+.class1 {
+height:60px;
+background-color:blue;
+display:table-cell;
+vertical-align:middle;
+}
