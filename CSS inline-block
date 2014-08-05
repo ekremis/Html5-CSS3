@@ -1,0 +1,28 @@
+// HTML
+<div style="width:100px; height:80px; background-color:red; border:1px solid black;" class="block">display:block</div>
+<div style="width:100px; height:80px; background-color:red; border:1px solid black;" class="block">display:block</div>
+<div style="width:100px; height:80px; background-color:red; border:1px solid black;" class="block">display:block</div>
+<div style="width:100px; height:80px; background-color:red; border:1px solid black;" class="block">display:block</div>
+<br>
+<div style="width:100px; height:80px; background-color:red; border:1px solid black;" class="inline">display:inline</div>
+<div style="width:100px; height:80px; background-color:red; border:1px solid black;" class="inline">display:inline</div>
+<div style="width:100px; height:80px; background-color:red; border:1px solid black;" class="inline">display:inline</div>
+<div style="width:100px; height:80px; background-color:red; border:1px solid black;" class="inline">display:inline</div>
+<br><br>
+<div style="width:100px; height:80px; word-wrap: break-word; background-color:red; border:1px solid black;" class="inline-block">display:inline-block</div>
+<div style="width:100px; height:80px; word-wrap: break-word; background-color:red; border:1px solid black;" class="inline-block">display:inline-block</div>
+<div style="width:100px; height:80px; word-wrap: break-word; background-color:red; border:1px solid black;" class="inline-block">display:inline-block</div>
+<div style="width:100px; height:80px; word-wrap: break-word; background-color:red; border:1px solid black;" class="inline-block">display:inline-block</div>
+
+// CSS
+.block {
+	display: block;
+}
+
+.inline {
+	display:inline;
+}
+
+.inline-block {
+	display: inline-block;
+}
